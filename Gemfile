@@ -1,4 +1,7 @@
 source "http://rubygems.org"
 
 gem 'nanoc'
-gem 'adsf'
+gem 'fssm'
+gem 'haml'
+gem 'RedCloth'
+gem 'compass'

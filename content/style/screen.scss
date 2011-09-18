@@ -1,0 +1,17 @@
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+
+body { 
+  font-family: 'PT Sans', Georgia, Palatino, Times, 'Times New Roman', sans-serif; 
+  background: #DADADA;
+  @include showgrid;
+}
+
+.articles {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 700px;
+  @include box-shadow;
+  background: #fff;
+}
