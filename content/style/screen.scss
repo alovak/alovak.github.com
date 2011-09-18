@@ -1,17 +1,117 @@
-@import "compass/reset";
-@import "compass/css3/box-shadow";
+@import "blueprint/reset";
+@import "blueprint";
+@import "compass/css3/text-shadow";
+// @import "compass/reset";
+// @import "compass/css3/box-shadow";
+
 
 body { 
+  @include blueprint-debug;
+
   font-family: 'PT Sans', Georgia, Palatino, Times, 'Times New Roman', sans-serif; 
   background: #DADADA;
-  @include showgrid;
 }
 
-.articles {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 700px;
-  @include box-shadow;
-  background: #fff;
+a {
+  color: #1778ef;
+  text-decoration: none;
+}
+
+
+body {
+  #container {
+    @include container; 
+    // @include showgrid;
+  }
+  #header, #footer {
+    @include column($blueprint-grid-columns); 
+  }
+  #content {
+    @include prepend(1);
+    @include append(1);
+    @include column(14); 
+    background: #fff;
+  } 
+  #sidebar {
+    @include prepend(1);
+    @include column(7, true); 
+  }
+}
+
+#content{ 
+  h1 {
+    font-size: 25px;
+    font-weight: normal;
+
+    line-height: 30px;
+
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 22px;
+
+    line-height: 25px;
+
+    font-weight: normal;
+    letter-spacing: -1px;
+  }
+
+  p {
+    margin: 20px 0;
+
+    font-size: 15px;
+
+    line-height: 20px;
+  }
+
+  ul,  ol {
+    margin: 20px;
+  }
+
+  li {
+    font-size: 15px;
+
+    line-height: 20px;
+  }
+
+  ul li {
+    list-style-type: square;
+  }
+
+  .articles {
+    padding: {
+      bottom: 20px;
+    }
+
+    .article {
+      padding-bottom: 0px;
+      padding-top: 30px;
+      border-bottom: 1px #c2c2c2 dashed;
+    }
+  }
+}
+
+#sidebar {
+  #about {
+    #photo {
+      img {
+        padding: 5px;
+        background: #fff;
+      }
+      // width: 140px;
+      // height: 140px;
+      // padding: 10px;
+      // background: #fff;
+    }
+
+    p {
+      margin: 20px 0;
+
+      font-size: 13px;
+
+      line-height: 20px;
+
+    }
+  }
 }
