@@ -6,7 +6,11 @@ created_at: 21 April 2011
 
 h1. Blog to see the things you produce in a different light
 
-Developers in our cross-functional team do many things: Ruby/JavaScript/HTML/CSS/deployments/etc. We use cards and whiteboard to manage tasks. Each task (code, requirements, etc.) is reviewed before moving card to the ‘Done’ column on the board. We don’t have additional test phase except demo in the end of iteration because our code is covered with RSpec and Cucumber :)
+Developers in our cross-functional team do many things: Ruby/JavaScript/HTML/CSS/deployments/etc. We use cards and whiteboard to manage tasks. Each task (code, requirements, etc.) is reviewed before moving card to the ‘Done’ column on the board.
+
+We don’t have additional test phase except demo in the end of iteration. Nevertheless we have a little amount of deffects because our code has a good coverage  with RSpec and Cucumber :) But sometimes it's not enough and small issues are still there. Especially with user interface. How can we find them?
+
+<!-- read more -->
 
 Recently we started to write posts about release changes. We describe features that matter to our users. Of course all features should be valuable but we have different kind of users, so we are blogging only about features for external users (not admins, supporters, etc.).
 

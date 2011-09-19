@@ -10,10 +10,7 @@ h1. Solve problems on higher level then they are
 
 My friend creates a large number of automation tests for service several teams work on. Recently we discussed different aspects of cucumber feature scenarios such as coupling and decoupling, conditional steps, etc.
 
-* one
-* two
-
-А что если по руски написать? Как он воспринимает этот текст?
+<!-- read more -->
 
 The main question he wanted to clarify was how to handle horizontal integration tests when some steps in the middle are different? We reviewed different approaches for such cases.
 
