@@ -4,6 +4,11 @@ compile '/style/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
+compile '/articles/*/' do
+  filter item[:extension]
+  layout 'article'
+end
+
 compile '*' do
   unless item.binary?
     filter item[:extension]
