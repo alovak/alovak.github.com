@@ -6,11 +6,11 @@ created_at: 29 Jul 2011
 
 h1. Solve problems on higher level then they are
 
-!http://farm7.static.flickr.com/6074/6102795531_51e96072f6.jpg!:http://www.tut.by
+!/images/articles/elevator.jpg!:http://www.tut.by
 
 My friend creates a large number of automation tests for service several teams work on. Recently we discussed different aspects of cucumber feature scenarios such as coupling and decoupling, conditional steps, etc.
 
-<!-- read more -->
+<a name="more"></a><!-- read more -->
 
 The main question he wanted to clarify was how to handle horizontal integration tests when some steps in the middle are different? We reviewed different approaches for such cases.
 
