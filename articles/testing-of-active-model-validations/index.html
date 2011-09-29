@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+      <title>
+        Pavel Gabriel Personal Site - Тестирование своих валидаций для ActiveModel
+      </title>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+      <link href='/style/screen.css' media='screen, projection' rel='stylesheet' type='text/css' />
+      <link href='/style/print.css' media='print' rel='stylesheet' type='text/css' />
+      <!--[if IE]>
+        <link href='/style/ie.css' media='print' rel='stylesheet' type='text/css' />
+      <![endif]-->
+      <meta content='nanoc 3.2.2' name='generator' />
+    </meta>
+  </head>
+  <body>
+    <div id='container'>
+      <div id='header'>
+        &nbsp;
+      </div>
+      <div id='content'>
+        <div class='article'>
+          <div class='date'>
+            18 Sep 2011
+          </div>
+          <h1>Тестирование своих валидаций для ActiveModel</h1>
+          <p>На днях я начал писать библиотеку для работы с банковскими картами. Одно из назначений &#8211; проверка номера карты и её срока действия.</p>
+          <p>Как писать свои валидаторы для Rails 3 описано в документации. А вот как их протестировать?</p>
+          <p><!-- read more --></p>
+          <h2>Решение №1</h2>
+          <p>Пишем класс для валидируемого объекта, описываем правила валидации, а в спеке задаем значение для атрибута и проверить на валидность и наличие нужной нам ошибки.</p>
+          <p><code>
+          </code></p>
+          <p>А что, если нам нужно протестировать больше правил?</p>
+          <p>Тут возникают различные варианты, базирующиеся на этом решении. Те, которые возникли у меня &#8211; плохо пахнут. Я хочу, чтобы было красиво :)</p>
+          <h2>Решение №2</h2>
+          <p>В тестах ActiveModel я нашел то, что искал:</p>
+          <p><code>
+            def hello
+            end
+          </code></p>
+          <p>Для каждого примера мы &#8220;прописываем валидации&#8221; и перед началом удаляем все валидации.</p>
+          <h2>Решение №3</h2>
+          <p>Возникла ещё одна хорошая идея &#8211; использовать shoulda matchers. Тогда спеки будут выглядеть как-то так:</p>
+          <p><code>
+            def hello
+            end
+          </code></p>
+          <p>Вобщем, полезно осмотреться по сторонам.</p>
+        </div>
+      </div>
+      <div id='sidebar'>
+        <div id='about'>
+          <div id='photo'>
+            <img src='/images/pavel-gabriel.jpg' />
+          </div>
+          <p>
+            Ruby/Rails developer
+            <br />
+            Agile/TDD/BDD evangelist
+            <br />
+            Co-founder of Belorussian
+            Agile community
+          </p>
+          <p>
+            <a href='http://www.twitter.com/alovak'>
+              <img alt='Follow alovak on Twitter' src='http://twitter-badges.s3.amazonaws.com/follow_me-b.png' />
+            </a>
+          </p>
+        </div>
+      </div>
+      <div id='footer'>
+        &nbsp;
+      </div>
+    </div>
+  </body>
+</html>

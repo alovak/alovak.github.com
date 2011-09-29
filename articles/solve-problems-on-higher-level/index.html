@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+      <title>
+        Pavel Gabriel Personal Site - Solve problems on higher level then they are
+      </title>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+      <link href='/style/screen.css' media='screen, projection' rel='stylesheet' type='text/css' />
+      <link href='/style/print.css' media='print' rel='stylesheet' type='text/css' />
+      <!--[if IE]>
+        <link href='/style/ie.css' media='print' rel='stylesheet' type='text/css' />
+      <![endif]-->
+      <meta content='nanoc 3.2.2' name='generator' />
+    </meta>
+  </head>
+  <body>
+    <div id='container'>
+      <div id='header'>
+        &nbsp;
+      </div>
+      <div id='content'>
+        <div class='article'>
+          <div class='date'>
+            29 Jul 2011
+          </div>
+          <h1>Solve problems on higher level then they are</h1>
+          <p><a href="http://www.tut.by"><img src="/images/articles/elevator.jpg" alt="" /></a></p>
+          <p>My friend creates a large number of automation tests for service several teams work on. Recently we discussed different aspects of cucumber feature scenarios such as coupling and decoupling, conditional steps, etc.</p>
+          <p><a name="more"></a><!-- read more --></p>
+          <p>The main question he wanted to clarify was how to handle horizontal integration tests when some steps in the middle are different? We reviewed different approaches for such cases.</p>
+          <p>As a developer I know if my tests become complex it’s an indicator that I do something wrong. What measures can I take?</p>
+          <p>The obvious solution is to refactor tests; wrap complex code blocks into fine named methods. A better solution is to simplify/refactor your code. The best solution is to simplify/refactor business logic.</p>
+          <p>In order to change business logic I need to communicate with Product owner (PO) and discuss with him problems I faced and to figure out what are the other possible ways to achieve the same business value.</p>
+          <p>Let’s back to my friend. Often the aim of automation testing is just to ensure that application works. What happens when an automation test became complex? I guess that the best solution taken in most cases is test refactoring. But instead of that you can reassess of the problem and think about real reasons of this complexity. Then you can discuss the ways how to simplify the application with developers and PO .</p>
+        </div>
+      </div>
+      <div id='sidebar'>
+        <div id='about'>
+          <div id='photo'>
+            <img src='/images/pavel-gabriel.jpg' />
+          </div>
+          <p>
+            Ruby/Rails developer
+            <br />
+            Agile/TDD/BDD evangelist
+            <br />
+            Co-founder of Belorussian
+            Agile community
+          </p>
+          <p>
+            <a href='http://www.twitter.com/alovak'>
+              <img alt='Follow alovak on Twitter' src='http://twitter-badges.s3.amazonaws.com/follow_me-b.png' />
+            </a>
+          </p>
+        </div>
+      </div>
+      <div id='footer'>
+        &nbsp;
+      </div>
+    </div>
+  </body>
+</html>
