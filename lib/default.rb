@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # All files in the 'lib' directory will be loaded
 # before nanoc starts compiling.
 require "rubygems"
@@ -24,7 +26,7 @@ def excerpt_of(item, read_more='<!-- read more -->')
 
   post_dom.css('*').each do |p, index|
     if p.inner_html.match(read_more)
-      p.inner_html = p.inner_html.gsub(Regexp.new("#{read_more}.*"), "<p><a href=\"#{item.identifier}\" title=\"#{item[:title]}\" class=\"read-more\">Read more...</a></p>")
+      p.inner_html = p.inner_html.gsub(Regexp.new("#{read_more}.*"), "<p><a href=\"#{item.identifier}\" class=\"read-more\">Read more...</a></p>")
       more_tag_found = true
       next
     end

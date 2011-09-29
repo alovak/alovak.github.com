@@ -1,5 +1,6 @@
 @import "blueprint/reset";
 @import "blueprint";
+@import "compass/css3";
 @import "compass/css3/text-shadow";
 // @import "compass/reset";
 // @import "compass/css3/box-shadow";
@@ -26,6 +27,23 @@ body {
   #header, #footer {
     @include column($blueprint-grid-columns); 
   }
+
+  a.home {
+    color: #fff;
+    padding: 2px 7px;
+    background: #000;
+    display: block;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    margin:{
+      top: 10px;
+      bottom: 10px;
+      left: 40px;
+    }
+    @include border-radius;
+  }
+
   #content {
     @include prepend(1);
     @include append(1);
